@@ -1,0 +1,7 @@
+# https://github.com/jekyll/jekyll/issues/332#issuecomment-18952908
+
+baseurl: /open-source-life
+title: Open Source Life
+
+sass:
+  style: compressed
