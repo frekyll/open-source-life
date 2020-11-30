@@ -1,9 +1,11 @@
 .masthead
-  align-items: center
   background-color: $peach
+  margin-bottom: 2rem
+
+.masthead-container
+  align-items: center
   display: flex
   justify-content: space-between
-  margin-bottom: 1rem
   padding: 1rem
 
 .masthead-title
@@ -21,3 +23,21 @@
 
     &:last-of-type
       margin-right: 0
+
+=masthead-md
+  .masthead-title,
+  .masthead-navigation
+    font-size: $text-h5
+
+  .masthead-navigation
+    a
+      margin-right: 1rem
+
+=masthead-lg
+  .masthead
+    margin-bottom: 4rem
+
+  .masthead-container
+    margin-left: auto
+    margin-right: auto
+    max-width: 960px
