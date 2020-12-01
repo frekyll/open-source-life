@@ -9,7 +9,9 @@ layout: compress
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="{{ '/assets/style.css' }}" rel="stylesheet">
   <body>
+    {% include masthead.html %}
     {{ content }}
+    {% include footer.html %}
     <script src="{{ '/assets/main.js' }}"></script>
   </body>
 </html>
