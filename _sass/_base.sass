@@ -29,17 +29,6 @@ a
 .group
   padding-bottom: 2rem
 
-.group-filled
-  background-color: $black
-  color: $white
-  padding: 6rem 1rem 2rem
-
-.group-text
-  text-align: center
-
-  a
-    color: $white
-
 .group-heading
   font-size: $text-h4
   margin-bottom: 1rem
@@ -81,7 +70,26 @@ a
     .story-text
       font-size: $text-h4
 
-.container
-  margin-left: auto
-  margin-right: auto
-  max-width: 960px
+.post-list
+  font-family: $font-family-secondary
+  font-weight: bold
+  list-style-type: none
+  padding-left: 0
+  text-align: center
+
+  li
+    margin-bottom: 1rem
+
+    &:last-of-type
+      margin-bottom: 0
+
+.post-list-link
+  color: $ruby
+
+=post-list-md
+  .post-list
+    font-size: $text-h4
+
+=post-list-lg
+  .post-list
+    font-size: $text-h3
