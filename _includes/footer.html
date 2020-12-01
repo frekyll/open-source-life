@@ -11,9 +11,9 @@
       <article class="article">
         <h4 class="article-title">Browse by category</h4>
         <ul class="tag-collection">
-          <li><a href="#">open</a></li>
-          <li><a href="#">source</a></li>
-          <li><a href="#">life</a></li>
+          {% for tag in site.tags %}
+            <li><a href="{{ site.baseurl }}/categories/#{{ tag[0] }}">{{ tag[0] }}</a></li>
+          {% endfor %}
         </ul>
       </article>
     </div>
