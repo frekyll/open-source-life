@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-{% include masthead.html %}
-
 <section class="group">
   <h1 class="group-heading">Writings inspired by oneness</h1>
 
@@ -22,12 +20,8 @@ title: Home
   <h2 class="group-heading">Read the latest</h2>
 
   <ul class="post-list">
-    <li><a class="post-list-link" href="#">The Story of the Tenth Friend: Understanding Suffering</a></li>
-    <li><a class="post-list-link" href="#">Nifty Jekyll Tips for Managing Assets</a></li>
-    <li><a class="post-list-link" href="#">Our Nature is Happiness</a></li>
-    <li><a class="post-list-link" href="#">The Usefulness of Practice</a></li>
-    <li><a class="post-list-link" href="#">Life as a Flowering of Spirit</a></li>
+    {% for post in site.posts %}
+      <li><a class="post-list-link" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
 </section>
-
-{% include footer.html %}
