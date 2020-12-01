@@ -12,8 +12,14 @@
   margin-bottom: 2rem
   text-align: center
 
+.article-group
+  margin-bottom: 2rem
+
 .article
   margin-bottom: 2rem
+
+  &:last-of-type
+    margin-bottom: 0
 
   a
     color: $white
@@ -23,14 +29,14 @@
   margin-bottom: 1rem
 
 .tag-collection
-  font-family: $font-family-secondary
+  font-family: $font-family-mono
   list-style-type: none
   padding-left: 0
 
   li
     border: 1px dotted
     border-radius: .25rem
-    display: inline
+    display: inline-block
     font-size: $text-h6
     padding: .25rem
 
@@ -38,7 +44,7 @@
       text-decoration: none
 
 .site-footer-logo
-  border-top: 2px solid $white
+  border-top: .25rem solid $white
   opacity: .25
 
   p
@@ -57,6 +63,7 @@
 
   .article
     flex: 1
+    margin-bottom: 0
 
     &:first-of-type
       margin-right: 4rem
