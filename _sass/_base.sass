@@ -49,10 +49,24 @@ a
 .story-text
   margin-bottom: 1rem
 
+  p
+    margin-bottom: 1rem
+
+    + p
+      text-indent: 2rem
+
+    &:last-of-type
+      margin-bottom: 0
+
 =story-md
   .story
-    align-items: center
     display: flex
+
+  .story-align-center
+    align-items: center
+
+  .story .story-align-top
+    align-items: top
 
   .story-text
     flex: 1
@@ -89,3 +103,12 @@ a
 =post-list-md
   .post-list
     font-size: $text-h4
+
+.drop-cap:first-child:first-letter
+  color: $ruby
+  float: left
+  font-size: $text-h1
+  font-weight: bold
+  line-height: 1
+  padding-right: .25rem
+  padding-top: .25rem
