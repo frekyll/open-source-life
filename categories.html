@@ -3,11 +3,22 @@ layout: default
 title: Categories
 ---
 
-{% for tag in site.tags %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+<section class="group">
+  <h1 class="group-heading">Categories</h1>
+
+  <div class="story story-align-top">
+    <div class="story-text">
+      {% for tag in site.tags %}
+        <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+        <ul>
+          {% for post in tag[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+    <div class="story-image">
+      <img alt="" src="https://dl.dropboxusercontent.com/s/krnb0hzfak5kdg4/illustration-collection-of-items.png?dl=0">
+    </div>
+  </div>
+</section>
