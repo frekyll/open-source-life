@@ -3,25 +3,22 @@ layout: default
 title: Home
 ---
 
-<section class="group">
-  <h1 class="group-heading">Writings inspired by oneness</h1>
+<section class="center contain-small margin-bottom-2">
+  <h1 class="margin-bottom-1 pad-small-block text-center text-h1">Writings inspired by oneness</h1>
 
-  <div class="story story-align-center">
-    <div class="story-text">
-      <p><b>Open Source Life is a little collection of writings on the joy of embodiment and technology as a means to express that.</b> Here, you may find anything from a how-to article on writing code, to ways in which we can recognize our nature as happiness. With tech playing an integral part in our sense of community, we'd like to bring more playfulness to it—inspiring a generation to view coding as a beautiful self-expression. We hope you find something useful here ✌️</p>
-    </div>
-    <div class="story-image">
-      <img alt="Illustration of humans connecting online" src="https://dl.dropboxusercontent.com/s/pakirgb6o2e3ybb/illustration-humans-connecting-online.png?dl=0">
-    </div>
+  <div class="pad-small-block">
+    <p class="drop-cap margin-bottom-1"><b>Open Source Life is a little collection of writings on the joy of embodiment and technology as a means to express that.</b> Here, you may find anything from a how-to article on writing code, to ways in which we can recognize our nature as happiness. With tech playing an integral part in our sense of community, we'd like to bring more playfulness to it—inspiring a generation to view coding as a beautiful self-expression. We hope you find something useful here.</p>
+
+    <img alt="Illustration of a family connecting online" src="https://dl.dropboxusercontent.com/s/kwipmr6rmy696t5/illustration-online-family.png?dl=0">
   </div>
 </section>
 
-<section class="group">
-  <h2 class="group-heading">Read the latest</h2>
+<section class="center contain-small margin-bottom-4">
+  <h2 class="margin-bottom-1 text-center text-h3">Read the latest</h2>
 
-  <ul class="post-list">
+  <ul class="font-family-secondary pad-small-block">
     {% for post in site.posts %}
-      <li><a class="post-list-link" href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </section>

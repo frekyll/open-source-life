@@ -1,8 +1,27 @@
 // Layout
 
+.clear-fix
+  &::after
+    clear: both
+    content: ""
+    display: table
+
 .center
   margin-left: auto
   margin-right: auto
+
+.display-block
+  display: block
+
+// Drop cap
+
+.drop-cap:first-child:first-letter
+  color: $ruby
+  float: left
+  font-size: 4rem
+  font-weight: bold
+  line-height: 1
+  padding-right: 1rem
 
 // 512px
 .contain-small
@@ -15,10 +34,16 @@
 .margin-bottom-1
   margin-bottom: 1rem
 
-.float-right
-  float: right
+.margin-bottom-2
+  margin-bottom: 2rem
+
+.margin-bottom-4
+  margin-bottom: 4rem
 
 // Typography
+
+.font-family-secondary
+  font-family: $font-family-secondary
 
 .text-h1
   font-size: $text-h1
@@ -55,9 +80,6 @@
 
 .black
   color: $black
-
-.peach
-  color: $peach
 
 .ruby
   color: $ruby
