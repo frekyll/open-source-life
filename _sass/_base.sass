@@ -4,8 +4,8 @@
 
 body
   color: $black
-  font-family: $font-family-primary
-  line-height: 1.25
+  font-family: $font-family-serif
+  line-height: 1.5
 
 img
   max-width: 100%
@@ -16,16 +16,39 @@ h3,
 h4,
 h5,
 h6
+  font-family: $font-family-primary
+  line-height: 1.25
   margin-top: 0
 
 p
-  font-family: $font-family-secondary
-  line-height: 1.5
+  margin-top: 0
+
+  + p
+    margin-top: 1rem
+    text-indent: 1rem
 
 a
   color: $ruby
   text-decoration: underline
   text-decoration-style: dotted
+
+ul
+  padding-left: 0
+
+// Code
+
+code,
+pre
+  font-family: $font-family-mono
+
+code
+  font-size: $text-h6
+
+pre
+  display: block
+  margin-bottom: 1rem
+  margin-top: 0
+  overflow: auto
 
 .group
   padding-bottom: 2rem
@@ -89,7 +112,6 @@ a
   font-family: $font-family-secondary
   font-weight: bold
   list-style-type: none
-  padding-left: 0
   text-align: center
 
   li
@@ -105,11 +127,10 @@ a
 .drop-cap:first-child:first-letter
   color: $ruby
   float: left
-  font-size: $text-h1
+  font-size: 4rem
   font-weight: bold
   line-height: 1
-  padding-right: .25rem
-  padding-top: .25rem
+  padding-right: 1rem
 
 .category-title
   margin-bottom: 1rem
